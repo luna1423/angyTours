@@ -9,14 +9,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Viajero Angy Tours</title>
 
-	<link href="../../bootstrap311/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/normalize.css">
 	<link rel="stylesheet" href="../../css/EViajero.css">
-	<link rel="stylesheet" href="../../css/nav.css">
 	<link rel="stylesheet" href="../../css/ui-lightness/jquery-ui-1.10.4.css">
-
+	
 	<link rel="stylesheet" href="../../css/kendo.common.min.css">
 	<link rel="stylesheet" href="../../css/kendo.default.min.css">
 
