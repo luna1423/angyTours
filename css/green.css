@@ -1,0 +1,482 @@
+body 
+{
+	background:url(../images/bg.gif) repeat-x left top #d4d3d3; 
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; 
+	font-size: 15px; 
+	color: #333; 
+}
+
+#logo 
+{ 
+	color:white; 
+	font-size:24px; 
+	font-style:italic; 
+	font-weight:normal; 
+	line-height:69px; 
+}
+
+#header 
+{ 
+	background:url(../images/bg_header_green.gif) left top no-repeat; 
+	height:123px; 
+}
+
+#content 
+{ 
+	background:url(../images/bg_content.gif) left top repeat-x #FFFFFF; 
+	border-left:1px solid #9c9c9c; 
+	border-right:1px solid #9c9c9c; 
+	padding: 10px 0px;
+	width:938px !important; 
+}
+
+#wrapper 
+{ 
+	padding-bottom:10px !important; 
+	background:url(../images/bg_content_bottom.gif) center bottom no-repeat; 
+}
+
+#footer 
+{ 
+	text-align:center; 
+	padding:15px 0px; 
+	color: #666; 
+	font-size:11px; 
+}
+
+/*******************************************************************************
+  HEADING CLASSES
+*******************************************************************************/
+
+h1 
+{ 
+	font-size:22px; 
+	color: #689102; 
+	display: block; 
+	margin-top: 10px;
+}
+
+h1.dashboard 
+{ 
+	background:url(../images/icon_dashboard_small.gif) left 3px no-repeat; 
+	padding-left:35px;
+}
+
+h1.ventas 
+{ 
+	background:url(../images/venta_small.png) left 3px no-repeat; 
+	padding-left:35px;
+}
+
+h1.bitacora 
+{ 
+	background:url(../images/bitacora_small.png) left 3px no-repeat; 
+	padding-left:35px;
+}
+
+h1.pago 
+{ 
+	background:url(../images/pago_icono_small.png) left 3px no-repeat; 
+	padding-left:35px;
+}
+
+h1.promocion 
+{ 
+	background:url(../images/Promociones_small.png) left 3px no-repeat; 
+	padding-left:35px;
+}
+
+h1.catalogos 
+{ 
+	background:url(../images/catalogo_icono_small.png) left 3px no-repeat; 
+	padding-left:35px;
+}
+
+h1.grupos 
+{ 
+	background:url(../images/grupo_small.png) left 3px no-repeat; 
+	padding-left:35px;
+}
+
+h1.registrar 
+{ 
+	background:url(../images/registro_small.png) left 3px no-repeat; 
+	padding-left:35px;
+}
+
+h2 
+{ 
+	font-size:18px !important; 
+}
+
+h3 
+{ 
+	font-size: 13px !important; 
+}
+
+/*******************************************************************************
+  USER TOOLS
+*******************************************************************************/
+#user_tools 
+{
+	background:url(../images/bg_usertools_right.gif) right top no-repeat;
+	float:right;
+	height:34px;
+	padding-right:9px;
+}
+
+#user_tools span 
+{
+	background:url(../images/bg_usertools_left.gif) left top no-repeat #000000;
+	color: #b0b0b0;
+	display:block;
+	float:right;
+	font-size:10px;
+	height:34px;
+	line-height: 34px;
+	padding-left:9px;
+}
+
+#user_tools a { 
+	color: #FFF; 
+	text-decoration:none; 
+}
+
+#user_tools a:hover { 
+	text-decoration:underline; 
+}
+
+/*******************************************************************************
+  MENU
+*******************************************************************************/
+
+#menu 
+{
+	float: left;
+}
+
+#menu ul.group 
+{
+	float: left;
+	list-style: none;
+	margin: 12px 0px 0px 14px;
+	padding: 0px 0px 0px;
+	z-index:4;
+}
+
+#menu ul.group li 
+{
+	display: inline;
+	float: left;
+	margin-left:0px !important;
+	position: static;
+	z-index: 5;
+}
+
+#menu ul.group li a 
+{
+	color: white;
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	height: 100px;
+	overflow:hidden;
+	text-align:center;
+	text-decoration:none;
+	width: 114px;
+	z-index:6;
+}
+
+#menu ul.group li a * 
+{
+	cursor: pointer;
+}
+
+#menu ul.group li a span.outer 
+{
+	display: block;
+	height: 90px;
+	padding-top: 10px
+}
+
+#menu ul.group li a span.inner 
+{
+	display: block;
+	padding: 55px 10px 9px 10px;
+	white-space: nowrap;
+	background-repeat: no-repeat;
+	background-position: 50% 3px;
+}
+
+#menu ul.group li a {
+	background:url('../images/navigation_background_green.gif') repeat-x top left;
+}
+#menu ul.group li.first a {
+	background:url('../images/navigation_first_green.gif') no-repeat top left;
+}
+#menu ul.group li.last a {
+	background:url('../images/navigation_last_green.gif') no-repeat top right;
+}
+#menu ul.group li.last a span.inner {
+	border: none !important;
+}
+
+#menu ul.group li a:hover, #menu ul.group li a.hover {
+	background-position: bottom left;
+	text-decoration: none;
+}
+#menu ul.group li.last a:hover, #menu ul.group li.last a.hover  {
+	background-position: bottom right;
+}
+#menu ul.group li a.current {
+	background-position: bottom left;
+	text-decoration: none;
+}
+#menu ul.group li.last a.current  {
+	background-position: bottom right;
+}
+#menu ul.group li.first a.current  {
+	background-position: bottom left;
+}
+
+#menu ul.group li a span.inner {
+	border-right: 1px solid #4c6b00;
+}
+#menu ul.group li a:hover span.inner {
+	border-right: 1px solid #4c6b00;
+}
+#menu ul.group li a.more {
+}
+#menu .additional a span {
+  	border-right:1px solid #DFDCBB;
+}
+#menu .dashboard { background-image: url(../images/icon_dashboard.png); background-repeat: no-repeat;  }
+#menu .venta { background-image: url(../images/venta.png); background-repeat: no-repeat;  }
+#menu .bitacora { background-image: url(../images/bitacora.png); background-repeat: no-repeat;  }
+#menu .pagos{ background-image: url(../images/pago_icono.png); background-repeat: no-repeat;  }
+#menu .promociones{ background-image: url(../images/Promociones.png); background-repeat: no-repeat;  }
+#menu .catalogo{ background-image: url(../images/catalogo_icono.png); background-repeat: no-repeat;  }
+#menu .grupo{ background-image: url(../images/grupo.png); background-repeat: no-repeat;  }
+#menu .registrar{ background-image: url(../images/registro.png); background-repeat: no-repeat;  }
+
+
+/*******************************************************************************
+  TABS
+*******************************************************************************/
+
+#tabs .container {
+	height: 25px;
+	padding-top: 8px;
+	border-left: 1px solid #486401;
+	border-right: 1px solid #486401;
+	border-bottom: 1px solid #486401;
+	width: 938px !important;
+	background: #eee;
+}
+
+#tabs ul {
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	list-style: none;
+}
+
+#tabs ul li {
+	display: inline;
+}
+
+#tabs ul li a {
+	font-family:Arial, Helvetica, sans-serif;
+	display: block;
+	float: left;
+	height: 25px;
+	margin-right: 3px;
+	font-size: 11px;
+	font-weight: bold;
+	overflow: hidden;
+	border-bottom: 0px;
+	background: #DEDEDE;
+	text-decoration:none;
+	color: #344704;
+}
+
+#tabs ul li a:hover {
+	text-decoration: underline;
+	background-color: #FFFFFF;
+}
+
+#tabs ul li a span {
+	height: 20px;
+	padding: 0px 10px;
+	display: block;
+	padding-top: 5px;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+#tabs ul li a.current {
+  background-color: #FFFFFF;
+}
+#tabs ul li.first a span {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#tabs {
+	background: #689102;
+}
+
+#tabs .container {
+	background:none;
+	border-bottom: none;
+}
+
+#tabs ul li a {
+	background: url('../images/tabs_left_green.gif') no-repeat left top;
+	border: 0px;
+}
+
+#tabs ul li a span {
+	background: url('../images/tabs_right_green.gif') no-repeat right top;
+}
+
+#tabs ul li a.current {
+  background-position: left bottom;
+}
+
+#tabs ul li a.current span {
+	background-position: right bottom;
+}
+#tabs ul li a.tempoff {
+  background-position: left top;
+}
+
+#tabs ul li a.tempoff span {
+	background-position: right top;
+}
+
+#tabs ul li.first a{
+  color: #1b486a !important;	
+}
+/*******************************************************************************
+  PORTLETS AND GRID
+*******************************************************************************/
+#portlets { padding:0px 10px; }
+.column { width: 450px; float: left; padding-bottom: 0px; }
+.column#left { margin-right:17px; }
+.portlet { margin: 0 0em 1em 0; }
+.portlet-header { margin: 0em; padding-bottom: 5px; padding-left: 6px; padding-top:4px; padding-right:6px; font-size:12px; border: none !important; color: #333 !important; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; cursor:move; }
+.portlet-header .ui-icon { float: right; cursor:pointer; }
+.portlet-header img { float:left; margin-right:5px; }
+#portlets .fixed { cursor:auto; } 
+.portlet-content { padding: 0.8em; font-size:12px !important; color: #333; border-top:1px solid #999 !important; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; }
+.ui-sortable-placeholder { border: 1px dashed #999 !important; visibility: visible !important; height: 100px !important; background: #EBEBEB;}
+.ui-sortable-placeholder * { visibility: hidden; }
+
+
+/*******************************************************************************
+  FORMS
+*******************************************************************************/
+form label { 
+	display:block !important; 
+	line-height:normal !important; 
+	margin: 5px 0px;  
+	font-size:15px;	
+	 
+}
+
+/*******************************************************************************
+  FIN DE FORMS
+*******************************************************************************/
+
+#imgBoton, .enviar
+{
+	vertical-align: middle;
+}
+
+#formulario #seccionIzquierda, #formulario #seccionDerecha
+{
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+}
+
+#formulario #seccionDerecha #botonDerecha
+{
+	text-align: right;
+}
+
+#formulario #seccionDerecha #seccionFechas, #formulario #seccionDerecha #seccionVerificar
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#formulario #seccionIzquierdaR, #formulario #seccionDerechaR
+{
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+}
+
+#formulario #seccionIzquierdaR
+{
+	margin-left: 10px;
+}
+
+#formulario #seccionDerechaR
+{
+	margin-left: 50px;
+}
+
+#formulario #seccionDerechaR #botonDerecha
+{
+	text-align: right;
+}
+
+.ui-autocomplete
+{
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 9999; 
+}
+
+* html .ui-autocomplete
+{
+    height: 100px;
+}
+
+#grid_Cerrados, .fechasyResultados
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#grid_Cerrados_Grupo, .fechasyResultados
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.fechasyResultados
+{
+	padding: 5px;
+	width: 200px;
+}
+
+.form-control{display:block;width:100%;height:34px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}
+
+.marcoBitacora
+{
+	margin-top:10px;
+	
+	font-size:16px;
+	border:1px #f0ad4e solid;
+	border-radius:15px;
+	text-align: center;
+	width: 200px;
+}
+.ui-autocomplete-loading{
+		  	background: white url('../img/ajax-loader.gif') right center no-repeat;
+		  }

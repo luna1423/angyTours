@@ -1,0 +1,13 @@
+.ui-helper-hidden-accessible 
+{
+	 /*display:none; */
+	 background: white;
+
+
+}
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    /*overflow-x: hidden;*/
+  }

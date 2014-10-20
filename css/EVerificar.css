@@ -1,0 +1,31 @@
+#formulario
+{
+	padding: 15px;
+}
+
+.formulario
+{
+	padding: 15px;
+	display: inline-block;
+	vertical-align: top;
+	border:1px black solid;
+	padding: 10px;
+	background: #CCCDC5;
+	font-size: 20px;
+	margin: 20px;
+}
+
+#resultados
+{
+	font-size: 16px;
+	padding: 5px;
+	margin-top: 10px;
+	width: 250px;	
+}
+
+#formulario,#resultados
+{
+	display: inline-block;
+	vertical-align: top;
+	
+}

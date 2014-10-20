@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Manual de Usuario</title>
+	<link rel="stylesheet" href="../../css/estilo_manual.css">
+</head>
+<body>
+
+<div id="contenedor">
+
+<h2 class="titulo">Manual de usuario Sistema A.V.A</h2>
+<div id="contenedorIndice">
+<div class="indice">
+	<a href="#Ingresar_ventas">Ingresar Ventas</a><br>
+	<a href="#Abonar_venta">Abonar Ventas</a><br>
+	<a href="#Borrar_venta">Borrar Ventas</a><br>
+	<a href="#Generar_cupon_ventas">Generar cupón de ventas</a><br>
+	<a href="#Para_ventas_individuales">Para ventas individuales</a><br>
+	<a href="#Para_ventas_grupales">Para ventas grupales</a><br>
+	<a href="#Pagos">Pagos</a><br>
+	<a href="#Nuevo_voucher">Nuevo Voucher</a><br>
+	<a href="#Ver_voucher">Ver Voucher</a><br>
+</div>
+<div class="indice2">
+	<a href="#Pagos_pendientes">Pagos Pendientes</a><br>
+	<a href="#Pagos_cerrados">Pagos Cerrados</a><br>
+	<a href="#Nueva_promocion">Nueva Promocion</a><br>
+	<a href="#Administrar_promocion">Administrar Promoción</a><br>
+	<a href="#Nuevo_hotel">Nuevo Hotel</a><br>
+	<a href="#Administrar_hotel">Administrar Hotel</a><br>
+	<a href="#Agregar_viajero">Agregar Viajero</a><br>
+	<a href="#Agregar_agente_ventas">Agregar agente de ventas</a><br>
+	<a href="#Bitacoras">Bitácoras</a><br><br>
+
+</div>
+</div>
+	<!-- ::::::::::::::::::::::::::: Ventas :::::::::::::::::::::::::::::::::: -->
+	<div id="contenedor_ventas">
+	<a id="Ingresar_ventas"></a>
+		<h2 class="titulo">Ingresar Ventas</h2><br>
+		<p class="texto">Las ventas que el sistema permite ingresar son Ventas Individuales y Ventas Grupales, para ambos casos se desplegará un formulario en el que se deberá ingresar los datos correspondientes. Hay que tomar en cuenta que, para realizar una venta en cualquiera de las dos modalidades, deberá estar registrado el cliente (Ver sección Registro Cliente). Los datos mostrados en el formulario son los siguientes:</p><br><br>
+		<figure class="imagenes"><img src="../../img/Ventastabla.JPG" alt="" class="imagenes"></figure><br><br>
+
+		<p class="texto">Los campos de “Pagado por el Cliente”, “Nombre del Titular del Grupo”, “Hotel” y “Operadora Mayorista” se autocompletarán cuando el usuario digite en él, teniendo en cuenta 	que, para que esto funcione, se deberá tener un registro previo de los campos antes mencionados 
+		<br><br>
+		Para los campos Pagado por el Cliente y Nombre del Titular del Grupo serán los clientes que pertenezcan a la base de datos del sistema en ese momento (Ver sección Registro Cliente), por otra parte, el campo Hotel tomará los datos de los Hoteles registrados en ese momento (Ver sección Hoteles). El campo Operadora Mayorista ya estará precargado con las operadoras que cuenta la Agencia.</p><br><br>
+
+
+		<figure class="imagenes"><img src="../../img/nuevaventa.JPG" alt="" class="imagenes"></figure><br><br>
+
+
+        <a id="Abonar_venta"></a>
+		<h2 class="titulo">Abonar Ventas</h2><br><br>
+		<p class="texto">Los abonos solo se podrán efectuar en las ventas que ya se encuentren registradas en el sistema, tanto para Ventas Individuales como para Ventas Grupales.<br><br>
+			
+			<ul class="ul_vinetas">
+			<li class="vinetas">1.	Se deberá introducir el nombre del titular de la venta en la modalidad correspondiente (Ventas Individuales – Abonos Individuales, Ventas Grupales – Abonos Grupales)</li>
+			<li class="vinetas">2.	Elegir en la tabla la venta a la que se desea realizar el abono</li>
+			<li class="vinetas">3.	Digitar la cantidad deseada a abonar.</li>
+			<li class="vinetas">4.	Se mostrará un mensaje donde indique que el abono se efectuó correctamente</li>
+			<li class="vinetas">5.	Imprimir el comprobante, si así se desea o regresar a la interfaz principal.</li>
+			</ul>
+
+		</p><br><br>
+		<figure class="imagenes"><img src="../../img/nuevoabono.JPG" alt="" class="imagenes"></figure><br><br>
+        	
+
+        <a name="Borrar_venta"></a>
+		<h2 class="titulo">Borrar Ventas</h2><br><br>
+		<p class="texto">Las ventas registradas podrán borrarse del sistema tanto para Ventas Individuales como para Ventas Grupales.
+		
+		<ul class="ul_vinetas">
+			<li class="vinetas">1.	Se deberá introducir el nombre del titular de la venta en la modalidad correspondiente (Ventas Individuales – Borrar Ventas Individuales, Ventas Grupales – Borrar Ventas Grupales)</li>
+			<li class="vinetas">2.	Elegir en la tabla la venta a la que se desea borrar.</li>
+			<li class="vinetas">3.	Decidir si la venta realmente se desea borrar o regresar a la interfaz principal.</li>
+			<li class="vinetas">4.	Si se seleccionó la opción de borrar, el sistema alerta que la venta ya se ha borrado, y se regresa automáticamente a la interfaz principal.</li>
+			<li class="vinetas"></li>
+			</ul>
+		</p><br><br>
+		<figure class="imagenes"><img src="../../img/borrarventa.JPG" alt="" class="imagenes"></figure><br><br>
+		<a id="Generar_cupon_ventas"></a>
+		<h2 class="titulo">Generar Cupones Ventas</h2><br><br>
+		<p class="texto">Para poder generar cupones desde el sistema, se deberá tener en cuenta que la venta ya debió de estar concluida, en caso contrario, el sistema no mostrará la venta para generar el cupón.
+		
+		<ul class="ul_vinetas">
+			<li class="vinetas">1.	Se deberá introducir el nombre del titular de la venta en la modalidad correspondiente (Ventas Individuales – Cupón Individual, Ventas Grupales – Cupón Grupal).</li>
+			<li class="vinetas">2.	Elegir en la tabla la venta a la que se desea generar el cupón.</li>
+		</ul>
+				<figure class="imagenes"><img src="../../img/cupon1.JPG" alt="" class="imagenes"></figure><br><br>
+
+
+		<a id="Para_ventas_individuales"></a>
+		<h3 class="sub">Para ventas individuales:</h3>
+
+		<ul class="ul_vinetas">
+			<li class="vinetas">3.	Llenar el formulario con los campos requeridos</li>
+			<li class="vinetas">4.	Dar clic en el botón Generar Cupón</li>
+			<li class="vinetas">5.	El sistema alertará que el cupón se ha generado con éxito</li>
+			<li class="vinetas">6.	Se podrá descargar el cupón o regresar a la interfaz principal</li>
+		</ul>
+		<figure class="imagenes"><img src="../../img/cupon2.JPG" alt="" class="imagenes"></figure><br><br>
+
+		<a id="Para_ventas_grupales"></a>
+		<h3 class="sub">Para ventas grupales:</h3>
+
+		<ul class="ul_vinetas">
+			<li class="vinetas">3.	Se deberá introducir los pasajeros del grupo uno a la vez.</li>
+			<li class="vinetas">4.	Ya ingresados todos los pasajeros correspondientes al grupo, se podrá imprimir el cupón de todos, teniendo en cuenta que será uno a la vez.</li>
+			<li class="vinetas">5.	Se podrá borrar los pasajeros del sistema que no pertenezcan al grupo.</li>
+			<li class="vinetas">6.	Se podrá regresar a la interfaz principal.</li>
+			
+			</ul>
+		</p><br><br>
+		<figure class="imagenes"><img src="../../img/cupon3.JPG" alt="" class="imagenes"></figure><br><br>
+	</div>
+	<!-- ::::::::::::::::::::::::::: pagos :::::::::::::::::::::::::::::::::: -->
+	<div id="contenedor_pagos">
+	<a id="Pagos"></a>
+		<h2 class="titulo">Pagos</h2><br><br>
+		<p class="texto">En esta sección podrá agregar/subir fichas de depósito al sistema y, también, podrá ver las fichas almacenadas por los clientes u otros usuarios. <br><br>
+
+		<a id="Nuevo_voucher"></a>
+		<h3 class="sub">Nuevo Voucher:</h3><br><br>
+
+		Se desplegará un formulario con la información necesaria para identificar el pago <br><br>
+		Dicho pago deberá ser verificado, para después abonarse a la cuenta a la que esté asignado (Ver sección Ver Voucher). <br><br>
+		<figure class="imagenes"><img src="../../img/pagos.JPG" alt="" class="imagenes"></figure><br><br>
+
+		<a id="Ver_voucher"></a>
+		<h3 class="sub">Ver Voucher:</h3><br><br>
+
+		Se desplegará una tabla que muestra los pagos que se han realizado con fichas de depósito. Podrá dar clic al botón “Ver Voucher” para visualizar el documento en cuestión. <br><br>
+
+
+		</p><br><br>
+				<figure class="imagenes"><img src="../../img/voucher1.JPG" alt="" class="imagenes"></figure><br><br>
+		    <a id="Pagos_pendientes"></a>
+			<h2 class="titulo">Pagos Pendientes </h2><br><br>
+		<p class="texto">Se podrán elaborar comprobantes de pagos para las ventas cerradas. Hay que tomar en cuenta, que, para que una venta pueda ser pagada, deberá haberse liquidado por el cliente.
+		
+		<ul class="ul_vinetas">
+			<li class="vinetas">1.	Deberá elegir el tipo de venta “Ventas” o “Grupos”.</li>
+			<li class="vinetas">2.	Elegir en la tabla la venta a la que se desea generar el comprobante de pago.</li>
+			<li class="vinetas">3.	Llenar el formulario correspondiente.</li>
+			<li class="vinetas">4.	Dar clic en el botón registrar pago.</li>
+			<li class="vinetas">5.	Podrá descargar el Voucher de pago o, de lo contrario, regresar a la interfaz inicial.</li>
+			</ul>
+		</p><br><br>
+		<figure class="imagenes"><img src="../../img/pagospendientes.JPG" alt="" class="imagenes"></figure><br><br>
+
+		<a id="Pagos_cerrados"></a>
+		<h2 class="titulo">Pagos Cerrados</h2><br><br>
+		<p class="texto">Se provee una tabla informativa de los pagos que se han realizado mostrando desde los más recientes hasta los más antiguos.</p><br><br>
+		<figure class="imagenes"><img src="../../img/pagoscerrados.JPG" alt="" class="imagenes"></figure><br><br>
+		
+	</div>
+	<!-- ::::::::::::::::::::::::::: promos :::::::::::::::::::::::::::::::::: -->
+	<div id="contenedor_promociones">
+	<a id="Nueva_promocion"></a>
+		<h2 class="titulo">Nueva Promoción</h2><br><br>
+		<p class="texto">En esta sección podrá dar de alta a nuevas promociones: <br><br>
+	Se desplegará un formulario con los datos necesarios para registrar la promoción.<br><br>
+	Campo Botón Paypal: En este campo se deberá introducir el código que se habrá generado en página de PayPal.<br><br>
+</p><br><br>
+		<figure class="imagenes"><img src="../../img/nuevapromocion.JPG" alt="" class="imagenes"></figure><br><br>
+
+		<a id="Administrar_promocion"></a>		
+		<h2 class="titulo">Administrar Promoción</h2><br><br>
+		<p class="texto">Las promociones existentes aparecerán en una tabla que muestra dos acciones diferentes: “Actualizar” y “Borrar”. <br><br>
+		Actualizar: Se mostrará la información actual así como también campos para editar dicha información. <br><br>
+		Borrar: Al presionar el botón se borrará la venta por completo del sistema y se mostrará una alerta notificando dicha acción. <br><br>
+		</p><br><br>
+				<figure class="imagenes"><img src="../../img/adminPromo.JPG" alt="" class="imagenes"></figure><br><br>
+
+	</div>
+	<!-- ::::::::::::::::::::::::::: catalogo :::::::::::::::::::::::::::::::::: -->
+	<div id="contenedor_catalogo">
+
+	<a id="Nuevo_hotel"></a>
+	<h2 class="titulo">Nuevo Hotel</h2><br><br>
+		<p class="texto">Este apartado, se encarga de registrar lo hoteles en la base de datos del sistema. <br><br>
+	Se desplegará un formulario para introducir los datos e imágenes del hotel. <br><br>
+</p><br><br>
+		<figure class="imagenes"><img src="../../img/catalogo.JPG" alt="" class="imagenes"></figure><br><br>
+
+		<a id="Administrar_hotel"></a>
+
+			<h2 class="titulo">Administrar Hotel</h2><br><br>
+		<p class="texto">Se desplegará una tabla en la cual aparecerán los hoteles existentes en el sistema, se dispondrán de tres opciones por cada hotel “Detalles”, “Actualizar”,“Borrar”.
+		<ul class="ul_vinetas">
+			<li class="vinetas">Detalles: Muestra la información del hotel que se encuentra en la base de datos.</li><br>
+			<li class="vinetas">Actualizar: Deberá introducir la información nueva en el campo editable.</li><br>
+			<li class="vinetas">Borrar: Se eliminará toda la información del hotel del sistema.</li><br>
+			
+			</ul>
+		</p><br><br>
+		<figure class="imagenes"><img src="../../img/adminHotel.JPG" alt="" class="imagenes"></figure><br><br>
+	</div>
+	<!-- ::::::::::::::::::::::::::: usuarios :::::::::::::::::::::::::::::::::: -->
+	<div id="contenedor_usuario">
+
+	<a id="Agregar_viajero"></a>
+		<h2 class="titulo">Agregar viajero</h2><br><br>
+		<p class="texto">Se deberá complementar la información requerida en el formulario, para los campos: <br><br>
+		Nombre de usuario, Teléfono y  Correo: La información en este campo no podrá ser utilizada por dos usuarios  la vez. <br><br>
+		En caso de que ya se encuentren registrados alguno de estos campos, el sistema alertará y no realizará el registro. <br><br>
+		</p><br><br>
+		<figure class="imagenes"><img src="../../img/regcliente.JPG" alt="" class="imagenes"></figure><br><br>
+		<a id="Agregar_agente_ventas"></a>
+		<h2 class="titulo">Agregar Agente de ventas</h2><br><br>
+		<p class="texto">Se desplegará un formulario con la información necesaria para el registro de un “Agente de Ventas”. Al igual que en el registro de viajero (Ver sección Agregar Viajero), hay campos que no deberán duplicarse. El sistema informará sobre estas situaciones.</p><br><br>
+		<figure class="imagenes"><img src="../../img/regAgente.JPG" alt="" class="imagenes"></figure><br><br>
+		
+	</div>
+	<!-- ::::::::::::::::::::::::::: bitacoras :::::::::::::::::::::::::::::::::: -->
+	<div id="contenedor_bitacoras">
+
+	<a id="Bitacoras"></a>
+		<h2 class="titulo">Bitácoras</h2><br><br>
+		<p class="texto">Esta sección contiene 2 sub apartados: “Ventas Individuales”, “Ventas Grupales”. <br><br>
+		Se desplegará una tabla con los movimientos realizados tanto para Ventas Individuales, como para Ventas Grupales. <br><br>
+		Este apartado permite calcular el total de ventas realizadas en un intervalo de tiempo, para realizar esta acción se deberá: <br><br>
+		</p><br><br>
+		<figure class="imagenes"><img src="../../img/bitacoras.JPG" alt="" class="imagenes"></figure><br><br>
+		<ul class="ul_vinetas">
+			<li class="vinetas">1.	Introducir un intervalo de tiempo en el que constarán las ventas que se deseen calcular.</li>
+			<li class="vinetas">2.	Dar clic en el botón Calcular. </li>
+			<li class="vinetas">3.	Se desplegará la cantidad exacta de los ingresos o egresos, según se requiera del intervalo de tiempo antes proporcionado.</li>
+			<li class="vinetas">4.	Se podrá descargar un reporte dando clic en el botón Imprimir Reporte.</li>
+			
+			</ul>
+			<figure class="imagenes"><img src="../../img/Egresos.JPG" alt="" class="imagenes"></figure><br><br>
+
+	</div>
+</div>
+	
+</body>
+</html>

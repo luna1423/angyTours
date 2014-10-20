@@ -1,0 +1,100 @@
+.recuadro
+{
+	border: 1px black solid;
+	display: inline-block;
+	height: 30px;
+	/*background: white;*/
+}
+#contenedor,#contenedor2
+{
+	/*display: inline-block;*/
+	/*border:2px red solid;*/
+	width: 800px;
+	border: 2px black solid;
+	/*background: ;*/
+}
+#contenedor #Encabezado
+{
+	/*display: inline-block;*/
+	display: block;
+	/*border:2px #38FC07 solid;*/
+}
+
+#contenedor #Encabezado #logo, #datos
+{
+	display: inline-block;
+}
+#contenedor #Encabezado #logo
+{
+	/*border: 2px red solid;*/
+	width: 200px;
+	height: 150px;
+	margin: 0 0 0 0;
+}
+#contenedor #Encabezado #logo figure
+{
+	/*border: 2px blue solid;*/
+	width: 195px;
+	height: 145px;
+	margin: 0 0 0 0;
+}
+#contenedor #Encabezado #logo figure img
+{
+	/*border: 2px green solid;*/
+	
+	width: 155px;
+	height: 135px;
+	margin: 5px 0 0 20px;
+
+}
+#contenedor #Encabezado #datos
+{
+	margin: 0 0 0 50px;
+	width: 500px;
+	height: 150px;
+}
+#folio
+{
+	float: right;
+	width:96px;
+}
+#cliente
+{
+	width: 700px;
+}
+#Descripcion
+{
+	width: 800px;
+	height: 200px;
+	
+}
+#cantidad
+{
+	width:  200px;
+
+}
+#cantLetras
+{
+	position: relative;
+	width: 400px;
+	margin: -110px 0 0 0;
+	
+}
+#fecha
+{
+	width: 186px;
+}
+#recibido
+{
+	width: 592px;
+
+}
+#Firma
+{
+	width: 200px;
+}
+#Texto 
+{
+	font-family: Arial;
+	word-wrap: break-word;
+}

@@ -1,0 +1,316 @@
+section
+{
+	background: white;
+	margin:0 auto;
+	width: 1100px;
+	
+}
+
+/*----- ESTILO INICIO -----*/
+#articuloInicio #textoInicio, #articuloInicio #carousel-example-generic
+{
+	display: inline-block;	
+}
+
+#articuloInicio #textoInicio #tituloInicio
+{
+	text-shadow: 5px 5px 40px black;
+}
+
+#articuloInicio #textoInicio
+{
+	font-family: 'Delius Swash Caps', cursive;
+	font-size: 18px;	
+	padding: 10px;
+	text-align: justify;
+	margin-left: 4em;
+	width: 400px;
+	border-radius: 15px;
+}
+
+#articuloInicio #imagenInicio
+{
+	width: 200px;
+}
+
+.parrafoSlider
+{
+	font-weight:bold;
+	color: #000;
+	background: rgba(255,255,255,0.5);
+}
+
+/* SLIDER */
+
+#slider
+{
+	border-radius: 15px;
+	box-shadow: 5px 5px 15px black;
+	margin-left: 2em;
+	margin-top: 3em;
+	width:480px;
+}
+
+/*----- ESTILO CÁTALOGO -----*/
+
+#articuloCatalogo #tituloCatalogo
+{
+	text-shadow: 5px 5px 40px black;
+	margin-left: 2.5em;
+}
+
+#articuloCatalogo #box3
+{
+	margin-left: 3em;
+	width: 250px;
+}
+
+#articuloCatalogo #nombreHotel
+{
+	text-align: center;
+}
+
+#articuloCatalogo #contenido_hotel
+{
+	margin-left: 10px;
+	padding: 10px;
+	text-align: justify;
+	width: 400px;
+}
+
+.img_hotel
+{
+	width: 350px;
+	height: 350px;
+	border-radius:15px;
+}
+
+#articuloCatalogo #contenido_hotel, #articuloCatalogo #img_hotel
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#articuloCatalogo #informacionHotel
+{
+	padding: 10px;
+}
+
+#articuloCatalogo #box3, #articuloCatalogo #informacionHotel
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+#frmCombos figure
+{
+ width: 60px;
+ margin:0 auto;
+}
+
+
+/*----- ESTILO PROMOCIONES -----*/
+
+#articuloPromociones #tituloPromociones
+{
+	text-shadow : 5px 5px 40px black;
+	margin-left : 2.5em;
+}
+
+.capasPromociones
+{
+	border : 1px #eef0f6 solid; 
+	display : inline-block;
+	margin-left: 30px;
+	margin-top: 20px;
+	vertical-align: top;
+	width : 500px; 
+}
+
+.titPromocion
+{
+	padding: 10px 0px;
+	text-align: center;
+}
+
+.contenidoPromocion
+{
+	padding: 20px;
+}
+
+.datosPromocion
+{
+	font-weight: bold;
+	font-size: 17px; 
+}
+
+.imagenesPromociones
+{
+	text-align: center;
+	width: 460px;
+}
+
+#btnMasInfo
+{
+	text-align: right;
+	padding: 10px;
+}
+
+/*----- ESTILO NOSOTROS -----*/
+
+#articuloNosotros #textoNosotros #tituloNosotros
+{
+	text-shadow: 5px 5px 40px black;
+}
+
+#articuloNosotros #imagenNosotros
+{
+	width: 500px;
+}
+
+#articuloNosotros #imagenNosotros figure img
+{
+	width: 300px;	
+	border-radius: 50px;
+	margin-left: 5em;
+	box-shadow: 5px 5px 15px black;
+}
+
+#articuloNosotros #textoNosotros
+{
+	font-family: 'Delius Swash Caps', cursive;
+	font-size: 18px;	
+	padding: 10px;
+	margin-left: 2em;
+	text-align: justify;
+	width: 450px;
+	border-radius: 15px;
+}
+
+#articuloNosotros #textoNosotros, #articuloNosotros #imagenNosotros
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*----- ESTILO CONTACTANOS -----*/
+
+#articuloContactanos
+{
+	padding-bottom: 80px;
+}
+
+#articuloContactanos #tituloContactanos
+{
+	margin-left: 2.5em;
+	text-shadow: 5px 5px 40px black;
+}
+
+#articuloContactanos #tabsContactanos
+{
+	margin: 0 auto;
+	width: 600px;
+}
+
+#articuloContactanos #seccionTab
+{
+	border:1px #eef0f6 solid;
+	background: #eef0f6;
+}
+
+#articuloContactanos #imagenContactanos img
+{
+	width: 200px;
+}
+
+#articuloContactanos #informacion,
+#articuloContactanos #imagenContactanos
+{
+	padding: 35px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#articuloContactanos #imagenContactanos
+{
+	margin-left: 35px;
+}
+
+#articuloContactanos #email
+{
+	padding: 25px;
+}
+
+#articuloContactanos #email #emailAjuste #enviar
+{
+	text-align: right;
+}
+
+#iconosRedes
+{
+	text-align: right;
+	padding-right: 10%;
+}
+
+#iconosRedes .facebook
+{
+	font-family: 'icomoon';
+	font-size: 2.5em;
+	color: #3B5998;
+	margin-left: 3em;
+}
+
+#iconosRedes .facebook:after
+{
+	content: "\e600";	
+}
+
+#iconosRedes .facebook:hover
+{
+	text-decoration: none;
+	color: #8b9dc3;
+	-moz-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	transition: 0.3s linear;
+}
+
+/* ----- CLASES ----- */
+
+.separador
+{
+	height: 90px;
+	padding-top: 70px;	
+	text-align: center;
+
+}
+
+.separador img 
+{
+	height: 5px;
+	width: 1000px;
+}
+
+.colorLetras
+{
+	color: #267d3d;
+}
+
+.bg-secundary
+{
+	color: #fff;
+	background-color: #7cb43b;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.tabs_holder
+{
+	width: 800px;
+	margin:0 auto;
+}
+
+.cargando
+{
+ text-align: center;
+ display: none;
+}

@@ -1,0 +1,61 @@
+html>body body
+{
+	background-image: url(../imagenes/fondo.jpg);
+}
+
+#intro
+{
+	background-image: url(../imagenes/intro.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-bottom: 150px;
+	margin-top: -20px;
+
+}
+
+#intro figure
+{
+	height: 370px;
+	margin-left: 21em;
+	padding-top: 4em;
+	width: 610px;
+}
+.flechita_intro
+{
+
+	position: absolute;
+	/*margin: 0 auto;*/
+	margin: 150px 0 0 500px;
+}
+/*#flecha_intro_abajo
+{
+	width: 50px;
+	height: 10px;
+	border: 2px green solid;
+}*/
+#intro img
+{
+	height: 370px;
+	width: 610px;
+}
+
+
+#intro #iconosPrincipales
+{
+	background-color: rgba(231,227,224, 0.5);
+	border-radius: 15px;
+	margin-left: 67%;
+	margin-top: 5%;
+	padding: 20px 15px;
+	width: 310px;
+}
+
+/*VENTANA MODAL*/
+
+ #iniciarSesion h4, #registrar h4
+ {
+	color: #278e00;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+ }

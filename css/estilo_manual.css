@@ -1,0 +1,57 @@
+body
+{
+	background: white;
+	
+	padding: 0px;
+}
+
+
+#contenedor
+{
+	
+	background: #FFFF80;
+	padding: 15px;
+	border-radius: 15px;	
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+#contenedor_bitacoras,#contenedor_usuario,#contenedor_catalogo,#contenedor_promociones,#contenedor_pagos,#contenedor_ventas
+{
+	background: #FF9224;
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	text-align: justify;
+	font-family: arial;
+	padding: 15px;
+	border:1px black solid;
+}
+.titulo
+{
+	text-align: center;
+}
+
+figure
+{
+	margin: 0 auto;
+}
+
+.imagenes
+{
+	width: 600px;
+}
+
+.indice, .indice2
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#contenedorIndice
+{
+	text-align: center;
+}

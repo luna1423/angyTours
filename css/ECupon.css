@@ -1,0 +1,25 @@
+#formCupon
+{
+	margin: 0 auto;
+	width: 1214px;
+}
+
+#cliente, #hotel, #venta
+{
+	border-radius: 15px;
+	border:1px #CCCDC5 solid;
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+	width: 400px;
+}
+
+#hotel
+{
+	height: 439px;
+}
+
+#boton
+{
+	text-align: right;
+}

@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<META name="robots" content="index,follow">
+	<META name="description" content="Agencia de viajes, Mérida Yucatán. Reservaciones nacionales de hoteles y transporte">
+	<META name="keywords" content="AGENCIA, VIAJES, ANGYTOURS, ANGY-TOURS, ANGY, MERIDA, RESERVACIONES, RIVIERA, MAYA, GRUPALES, HOTELES, RENTA, AUTOBUSES, VACAIONES, PASEOS, EXCURSIONES, ESCOLARES, CULTURALES, RELIGIOSAS, YUCATAN">
+	<title>Angy Tours</title>
+
+	<link rel="stylesheet" href="css/EnavBar.css">
+	<link rel="stylesheet" href="css/EIntro.css">
+	<link rel="stylesheet" href="css/EInfo.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/EContactanos.css">
+
+	<link rel="shortcut icon" href="imagenes/iconoAngy.ico" />
+
+	<link href='http://fonts.googleapis.com/css?family=Delius+Swash+Caps' rel='stylesheet' type='text/css'>
+
+	<link href="bootstrap311/css/bootstrap.min.css" rel="stylesheet">	
+
+</head>
+
+<body style="font-family: 'Delius Swash Caps', cursive;">	
+
+	<!-- ************************************************
+					INTRO DE LA PÁGINA 
+	***************************************************-->
+		<div id="intro">
+     		<figure>
+     			<img src="imagenes/AngyTours.png" alt="">
+     		</figure>
+
+     		<img class="flechita_intro" src="img/desliza.png" alt="" style="width:300px; height:150px; ">
+
+			<div id="iconosPrincipales">
+
+				<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#registrar" id="btnregistrar">
+        			Registrarse
+      			</button>
+				 <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#iniciarSesion" id="btniniciarSesion">
+        			Iniciar Sesión
+      			</button>
+      			
+				
+			</div>
+		</div>
+
+		<!-- ************************************************
+					VENTANA MODAL INICIAR SESIÓN 
+	***************************************************-->
+
+		<div class="modal fade" id="iniciarSesion">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title">¡¡ Bienvenido <br> a <br> Angy Tours !!</h4>
+		      </div>
+		      <div class="modal-body">
+		         	<form action="php/loggeo.php" method="POST" autocomplete="on" class="form-horizontal" role="form"> 
+                                                         
+                        <label for="username" class="uname"> Nombre de Usuario: </label>
+                        <input id="username" name="id" required="required" type="text" placeholder="Usuario" class="form-control"/>
+                                
+                        <label for="password" class="youpasswd"> Contraseña: </label>
+                        <input id="password" name="pass" required="required" type="password" placeholder="Contraseña" class="form-control"/> 
+                                                       
+                        <div class="modal-footer">
+		        			<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        			<button type="submit" class="btn btn-success">Conectarse</button>
+		      			</div>
+                                
+                    </form>
+		      </div>
+		      
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+	<!-- ************************************************
+					VENTANA MODAL REGISTRO 
+	***************************************************-->
+
+	<div class="modal fade" id="registrar">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title">¡¡ Regístrate !!</h4>
+		      </div>
+		      <div class="modal-body">
+		         	<form action="php/Registrar.php" method="POST" autocomplete="on" class="form-horizontal" role="form"> 
+                                 
+                                    <label for="username" class="uname" > Nombre de Usuario: </label>
+                                    <input type="text" name="usuario" placeholder="Usuario" class="form-control" required>
+                                
+                                    <label for="username" class="uname" > Nombre Personal: </label>
+                                    <input type="text" placeholder="Nombre Personal" name="nombre" class="form-control" required>
+                                
+                                    <label for="password" class="youpasswd" > Contraseña: </label>
+                                    <input type="password" placeholder="Contraseña" name="pass" class="form-control" required> 
+                                
+                                    <label for="username" class="uname"> Teléfono Personal: </label>
+                                    <input type="tel" placeholder="Teléfono" name="telefono" required class="form-control" maxlength="10">
+                                
+                                    <label for="username" class="uname" > Correo Electrónico: </label>
+                                    <input type="email" placeholder="Email" name="correo" class="form-control" required>
+                               
+                                    <label for="username" class="uname"> Dirección: </label>
+                                    <input type="text" placeholder="Dirección" name="direccion" class="form-control" required>
+                                
+                                
+                                <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						        <button type="submit" class="btn btn-success">Registrarse</button>
+						      </div>
+                                
+                      </form>
+		      </div>
+		      
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+	
+	<!-- ************************************************
+					HEADER PÁGINA PRINCIPAL 
+	***************************************************-->
+
+	   <header>
+      			<nav id="nav_bar">
+      				<div id="imagenIzquierda">
+      					<a href="#">
+      					<figure id="figuraNav" style="display: none;">
+	    					<img src="imagenes/Angy.png" alt="">
+	    				</figure></a>
+	    			</div>
+
+					<ul id="botonera">
+						<li><a href="#inicioT"><figcaption class="palmeraImagen"><img src="palmeritas.png" alt=""></figcaption>  <strong> Inicio </strong> </a></li>
+						<li><a href="#catalogoT"><figcaption class="palmeraImagen"><img src="palmeritas.png" alt=""></figcaption><strong> Catálogo </strong></a></li>
+						<li><a href="#promocionesT"><figcaption class="palmeraImagen"><img src="palmeritas.png" alt=""></figcaption><strong> Promociones </strong></a></li>
+						<li><a href="#nosotrosT"> <figcaption class="palmeraImagen"><img src="palmeritas.png" alt=""></figcaption> <strong> Nosotros </strong> </a></li> 
+						<li><a href="#contactanosT"><figcaption class="palmeraImagen"><img src="palmeritas.png" alt=""></figcaption>  <strong> Contáctanos </strong> </a></li>
+					</ul>
+				</nav>
+
+	</header>
+	
+	<section>
+
+		<figure class="separador">
+			<img id="inicioT" src="imagenes/Separador2.png" alt="">
+		</figure>
+
+<!-- ************************************************
+					SECCIÓN INICIO
+	***************************************************-->
+
+		<article id="articuloInicio" style="padding-top:50px;">
+		
+			<div id="textoInicio">
+
+				<h2 id="tituloInicio" class="colorLetras">Inicio</h2><br>
+		
+					<p>¡Bienvenido  estimado visitante! <br><br>
+					En esta página ofrecemos nuestros servicios como asesores de viajes nacionales, con calidad y confianza, resultado de nuestros años de experiencia diseñando recorridos de acuerdo al presupuesto y necesidades de nuestros clientes. <br><br>
+
+					Contamos con servicio de hotelería para estancias de placer, negocios, convenciones, salidas escolares, viajes religiosos, etc. Por otro lado ofrecemos servicios de transporte, guías, entradas a parques nacionales, etc. <br><br>
+
+					Acérquese y consulte sin compromiso, diseñaremos sus viajes a su <span class="colorLetras">satisfacción</span>.
+			 		</p>
+
+			</div>
+
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000" style="width:540px;">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <img src="imagenes/1.jpg" alt="...">
+			      <div class="carousel-caption">
+    				<p class="parrafoSlider">Disfruta de unas vacaciones familiares inolvidables</p>
+			      </div>
+			    </div>
+			    <div class="item">
+		            <img src="imagenes/2.jpg" alt="...">
+		            <div class="carousel-caption">
+
+		           		<p class="parrafoSlider">Ten una vista espectacular de las playas mexicanas</p>
+		            </div>
+		        </div>
+
+		        <div class="item">
+		            <img src="imagenes/3.jpg" alt="...">
+		            <div class="carousel-caption">
+		            	<p class="parrafoSlider">Relájate en compañía de tus seres queridos</p>
+		            </div>
+          		</div>
+
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </a>
+			</div>
+		</article>
+
+	<figure  class="separador">
+		<img id="catalogoT" src="imagenes/Separador2.png" alt="">
+	</figure>
+
+<!-- ************************************************
+					SECCIÓN CATÁLOGO 
+	***************************************************-->
+
+	<article id="articuloCatalogo" style="height:500px; padding-top:50px;">
+
+		<h2 id="tituloCatalogo" class="colorLetras">Catálogo</h2>
+		
+		<div id="box3" class="caja">
+
+			<form id="frmCombos" class="form-horizontal" role="form">
+
+				<label for="nombre">Estado : </label>
+				<select name="idEstado" class="combo form-control" id="idEstado" ></select><br><br>
+
+				<figure>
+					<img src="img/loading-image.gif" id="cargando" class="cargando">
+				</figure>
+
+					<div id="mostrarHotel" style="display:none;">
+						<label for="hotel">Hotel:</label>
+						<select name="hotel" class="form-control" id="hotel"></select><br><br>							
+						<input type="button" value="Ver Hotel" id="btn_enviar">
+					</div>
+
+			</form>
+									
+		</div>
+			
+		<div id="informacionHotel">
+			<div id="nombreHotel"></div>
+			<div id="img_hotel"></div>
+			<div id="contenido_hotel"></div>			
+		</div>
+
+	</article>
+
+	<figure class="separador">
+		<img id="promocionesT" src="imagenes/Separador2.png" alt="">
+	</figure>
+
+<!-- ************************************************
+					SECCIÓN PROMOCIONES 
+	***************************************************-->
+
+	<article id="articuloPromociones" style="padding-top:50px;">
+
+		<h2 id="tituloPromociones" class="colorLetras">Promociones</h2>
+
+		<figure style="text-align: right;">
+			<img src="imagenes/logotipo_paypal_seguridad.png" alt="">
+		</figure>
+		
+		<div class="promos">
+		</div>
+
+	</article>
+		
+
+	<figure class="separador">
+		<img id="nosotrosT" src="imagenes/Separador2.png" alt="">
+	</figure>
+
+<!-- ************************************************
+					SECCIÓN NOSOTROS
+	***************************************************-->
+
+	<article id="articuloNosotros" style="padding-top:50px;">
+
+	<div id="imagenNosotros">
+		<figure>
+			<img src="imagenes/nosotros.jpg" alt="">
+		</figure>
+	</div>
+
+	<div id="textoNosotros">	
+		<h2 id="tituloNosotros" class="colorLetras">Nosotros</h2> <br><br>
+		<p>Angy Tours abre sus puertas en Julio de 1994, con una actividad enfocada primordialmente en promover la riqueza de nuestra república Mexicana, poniendo al alcance del turismo local y nacional la posibilidad de conocer tradiciones, zonas arqueológicas, pueblos mágicos, bellezas naturales, barrios con encanto etc. <br><br>
+
+
+		Promovemos servicios que se ajusten a tus <span class="colorLetras">necesidades</span> y <span class="colorLetras">presupuestos</span>, ya que contamos con una gama de productos accesibles, que ponen al alcance de todos la posibilidad de disfrutar las mejores vacaciones familiares. También contamos con servicios al exterior de la republica de acuerdo sus intereses, como son salidas a Cuba, Orlando/Miami, Europa, Costa Rica, etc. 
+		Angy Tours…. Estamos formados para servir.</p>
+
+	</div>
+
+	</article>
+
+<!-- ************************************************
+					SECCIÓN CONTÁCTANOS 
+	***************************************************-->
+
+	<figure class="separador">
+		<img id="contactanosT" src="imagenes/Separador2.png" alt="">
+	</figure>
+
+	<article id="articuloContactanos" style="padding-top:50px;">
+
+		<h2 id="tituloContactanos" class="colorLetras">Contáctanos</h2> <br>
+
+		<p id="textoContactanos">En esta sección podrá encontrar información relacionada con la empresa en la sección de <span class="colorLetras">"Datos"</span> en la pestaña de abajo. <br>
+		De igual forma, si necesita alguna información adicional que no se encuentra en esta página, siéntase libre de dejarnos
+		un comentario en la pestaña de <span class="colorLetras">"Correo"</span> y, brindándonos algunos datos, le responderemos las dudas que se le presenten a la brevedad posible.</p><br>
+
+		<!-- Nav tabs -->
+	<div id="tabsContactanos">
+		<ul class="nav nav-pills">
+		  <li class="active"><a href="#datos" data-toggle="tab">Datos</a></li>
+		  <li><a href="#email" data-toggle="tab">Correo</a></li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div id="seccionTab">
+	<div class="tab-content">
+		<div class="tab-pane fade in active" id="datos">
+			<p id="informacion">
+          			<label for="">Empresa:</label> Angy Tours <br><br>
+          			<label for="">Calle:</label> 59J #565 X 110 y 112<br><br>
+          			<label for="">Colonia:</label> Bojórquez<br><br>
+          			<label for="">Teléfono:</label> 9 12 - 28 - 95<br><br>
+          			<label for="">Celular:</label> 9992 44 - 54 - 14<br><br>
+          			<label for="">Correo:</label> angeviajes@hotmail.com
+        	</p>
+					
+        	<figure id="imagenContactanos">
+				<img src="imagenes/nosotros.jpg" alt="">
+			</figure>
+		</div>
+
+		<div class="tab-pane fade" id="email">
+			<div id="emailAjuste">
+			  	<form action="php/enviar.php" method="post" class="form-horizontal" role="form">
+	        				
+	          				<label>Nombre:</label><input type="text" class="form-control" name="nombre" placeholder="Nombre" required><br><br>
+	          				<label>Correo:</label><input type="text" name="correo" class="form-control" placeholder="Ejemplo@ejemplo.com" required><br><br>
+	          				<label>Mensaje:</label><textarea rows="4" cols="1000" class="form-control" name="mensaje" placeholder="Escriba aquí su comentario" required></textarea><br><br>
+	          			<div id="enviar">         				
+	          				<input id="btnenviar" type="submit" class="btn btn-primary" value="Enviar">
+	          			</div> 
+	        	</form>
+        	</div>
+        </div>
+	</div>
+</div>
+</div>
+
+<div id="iconosRedes">
+	<a class="facebook" href="https://www.facebook.com/angeles.angytours"></a>
+
+	<figure>
+		<img src="imagenes/logotipo_paypal_tarjetas.jpg" alt="">
+	</figure>
+</div>
+		
+	</article>
+
+</section>
+
+<!-- ******************************************************
+					SECCIÓN DE SCRIPT
+	******************************************************* -->
+
+	<script src="js/jquery-2.0.2.min.js"></script>
+	<script src="bootstrap311/js/bootstrap.min.js"></script>
+	<script src="js/appCombos.js"></script>
+
+</body>
+    	
+</html>

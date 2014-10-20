@@ -1,0 +1,92 @@
+#informacion
+{
+	margin: 0 auto;	
+	width: 805px;
+}
+
+.bordes
+{
+	border-radius: 15px;
+	border:1px #CCCDC5 solid;
+	padding: 10px;
+	width: 400px;
+}
+
+button a
+{
+	color: white;
+
+}
+
+button a:hover
+{
+	color: white;
+	text-decoration: none;
+}
+
+.bordes2
+{
+	border-radius: 15px;
+	border:1px #CCCDC5 solid;
+	margin: 0 auto;
+	padding: 10px;
+	width: 500px;
+}
+
+.derecha
+{
+	text-align: right;
+}
+
+#datos, #divDerecha
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#formAbonoV
+{
+	width: 300px;
+	margin: 0 auto;
+}
+
+#datos_grupo
+{
+	border-radius: 15px;
+	border:1px #CCCDC5 solid;
+	padding: 10px;
+	width: 400px;
+}
+
+#datos_doble
+{
+	border-radius: 15px;
+	border:1px #CCCDC5 solid;
+	padding: 10px;
+	width: 400px;
+}
+
+#datos_grupo, #datos_doble
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#TxtDescripcion
+{
+	 word-wrap: break-all;
+}
+
+#borrarDatos
+{
+	margin: 0 auto;
+	padding: 10px;
+	width: 600px;
+}
+
+#perfil
+{
+	margin:0 auto;
+	padding-left: 150px;
+	width:550px;
+}
