@@ -315,7 +315,7 @@
 
 <script src="../../js/jquery-2.0.2.min.js"></script>
 <script src="../../js/jquery-ui-1.10.4.js"></script>
-<script src="../../bootstrap311/js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 <script src="../../js/kendo.web.min.js"></script>
 <script src="../../jquery-ui-1.10.4.custom/development-bundle/ui/i18n/jquery.ui.datepicker-es.js"></script>
 <script src="../../js/appViajero.js"></script>
